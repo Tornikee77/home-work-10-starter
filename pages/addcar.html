@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/addCar.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Add a New Car</h2>
+      <form id="carForm">
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select id="category" name="category">
+            <option value="popularCars">Popular Cars</option>
+            <option value="recommendCars">Recommend Cars</option>
+          </select>
+          <span id="categoryError" class="error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="name">Car Name</label>
+          <input type="text" id="name" name="name" />
+
+          <span id="nameError" class="error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="type">Car Type</label>
+          <input type="text" id="type" name="type" />
+          <span id="typeError" class="error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="fuel">Fuel Capacity</label>
+          <input type="text" id="fuel" name="fuel" />
+          <span id="fuelError" class="error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="transmission">Transmission</label>
+          <select id="transmission" name="transmission">
+            <option value="Manual">Manual</option>
+            <option value="Automatic">Automatic</option>
+          </select>
+          <span id="transmissionError" class="error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="capacity">Capacity</label>
+
+          <input type="text" id="capacity" name="capacity" />
+          <span id="capacityError" class="error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="price">Price (per day)</label>
+
+          <input type="number" id="price" name="price" step="0.01" />
+          <span id="priceError" class="error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="favorite">Favorite</label>
+          <input type="checkbox" id="favorite" name="favorite" />
+          <span id="favoriteError" class="error"></span>
+        </div>
+
+        <button type="submit">Add Car</button>
+      </form>
+      <a
+        href="../index.html"
+        style="
+          display: block;
+          text-align: center;
+          margin-top: 20px;
+          color: #007bff;
+          text-decoration: none;
+        "
+        >Go to Car List</a
+      >
+    </div>
+    <script src="../js/addCar.js"></script>
+  </body>
+</html>
